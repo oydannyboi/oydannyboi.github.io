@@ -3,106 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <title>Daniel's CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="page-banner">
-    <header>
-      <h1 id="title">Daniel Auerbach's CV</h1>
-      <nav>
-        <a href="#contact-information-header">Contact Information</a>
-        <a href="#education-header">Education</a>
-        <a href="#skills-header">Skills</a>
-        <a href="#experience-header">Experience</a>
-      </nav>
-    </header>
+    <a id="title" href="#top">Daniel Auerbach</a>
+    <nav>
+      <div class="nav-container">
+        <a class="nav-link" href="#contact-information-header">Contact Information</a>
+      </div>
+      <div class="nav-container">
+        <a class="nav-link" href="#education-header">Education</a>
+      </div class="nav-container">
+      <div class="nav-container">
+        <a class="nav-link" href="#skills-header">Skills</a>
+      </div>
+      <div class="nav-container">
+        <a class="nav-link" href="#experience-header">Experience</a>
+      </div>
+    </nav>
   </div>
-  <section id="contact-information">
-    <h2 id="contact-information-header" class="section-header">Contact Information</h2>
-    <p>Daniel Auerbach</p>
-    <h3 class="subsection-header">Address</h3>
-    <address id="home-address" class="address">
-      <p id="street-address">
-        <span class="address street">7912 Hampton Arbor Circle</span><br>
-        <span class="address city">Chesterfield,</span>
-        <span class="address state">VA</span>
-        <span class="address postal-code">23832</span>
-      </p>
-    </address>
-    <address id="email-address" class="address">
-      <a href="mailto:dauerbach99@vt.edu" id="email">dauerbach99@vt.edu</a>
-    </address>
-    <address id="phone-address" class="address">
-      <p id="phone-number">(804)-496-8982</p>
-    </address>
-  </section>
-  <section id="education">
-    <h2 id="education-header" class="section-header">Education</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/1280px-Virginia_Tech_Hokies_logo.svg.png" alt="VT" style="width: 100px;">
-    <p>
-      <span id="college">Virginia Tech College of Engineering</span><br>
-      <span id="college-date">August 2019 - present</span>
-    </p>
-    <p id="major">
-      <span id="major-label">Major:</span>
-      <span id="major-title">Computer Science</span>
-    </p>
-    <p id="gpa">
-      <span id="gpa-label">GPA:</span>
-      <span id="gpa-num">3.66</span>
-    </p>
-  </section>
-  <section id="skills">
-    <h2 id="skills-header" class="section-header">Skills</h2>
-    <div id="languages">
-      <h3 id="languages-header" class="subsection-header">Programming Languages</h3>
-      <ul id="languages-list">
-        <li>Java</li>
-        <li>Python</li>
-        <li>C</li>
-        <li>bash</li>
-        <li>HTML</li>
-        <li>JavaScript</li>
-        <li>C#</li>
-        <li>NodeJS</li>
-        <li>SQL</li>
-      </ul>
-    </div>
-    <div id="tools">
-      <h3 id="tools-header" class="subsection-header">Tools</h3>
-      <ul id="tools-list">
-        <li>git</li>
-        <li>Docker</li>
-        <li>Docker Compose</li>
-        <li>Kubernetes</li>
-        <li>Django</li>
-        <li>Flask</li>
-      </ul>
-    </div>
-  </section>
-  <section id="experience">
-    <h2 id="experience-header" class="section-header">Experience</h2>
-    <div id="intern-container">
-      <h3 id="intern-header" class="subsection-header">Johns Hopkins Applied Physics Laboratory Intern</h3>
-      <address id=intern-address>
-        <p>Laurel, MD</p>
+  <div class="section-container odd-section">
+    <section id="contact-information">
+      <h2 id="contact-information-header" class="section-header">Contact Information</h2>
+      <p>Daniel Auerbach</p>
+      <h3 class="subsection-header">Address</h3>
+      <address id="home-address" class="address">
+        <p id="street-address">
+          <span class="address" id="street">7912 Hampton Arbor Circle</span><br>
+          <span class="address" id="city">Chesterfield,</span>
+          <span class="address" id="state">VA</span>
+          <span class="address" id="postal-code">23832</span>
+        </p>
       </address>
-      <div id="intern-2020">
-        <h4 id="intern-2020-header" class="sub-subsection-header">June 2020 - August 2020</h4>
-        <ul id="intern-2020-list">
-          <li>Developed new kubernetes deployment for data processing application in Python.</li>
-          <li>Designed and implemented end-to-end testing framework with Docker for network traffic processing application stack consisting of 15 interconnected applications.</li>
-          <li>Performed quality assurance programming to improve cognitive complexity for network traffic processing project written in C#.</li>
+      <address id="email-address" class="address">
+        <a href="mailto:dauerbach99@vt.edu" id="email">dauerbach99@vt.edu</a>
+      </address>
+      <address id="phone-address" class="address">
+        <p id="phone-number">(804)-496-8982</p>
+      </address>
+    </section>
+  </div>
+  <div class="section-container even-section">
+    <section id="education">
+      <h2 id="education-header" class="section-header">Education</h2>
+      <img id="vt-logo" src="logo.png" alt="VT">
+      <p>
+        <span id="college">Virginia Tech College of Engineering</span><br>
+        <span id="college-date">August 2019 - present</span>
+      </p>
+      <p id="major">
+        <span id="major-label">Major:</span>
+        <span id="major-title">Computer Science</span>
+      </p>
+      <p id="gpa">
+        <span id="gpa-label">GPA:</span>
+        <span id="gpa-num">3.66</span>
+      </p>
+    </section>
+  </div>
+  <div class="section-container odd-section">
+    <section id="skills">
+      <h2 id="skills-header" class="section-header">Skills</h2>
+      <div class="skills-list-container" id="languages">
+        <h3 id="languages-header" class="subsection-header">Programming Languages</h3>
+        <ul id="languages-list">
+          <li>Java</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>bash</li>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>NodeJS</li>
+          <li>SQL</li>
         </ul>
       </div>
-      <div id="intern-2019">
-        <h4 id="intern-2019-header" class="sub-subsection-header">May 2019 - August 2019</h4>
-        <ul id="intern-2019-list">
-          <li>Developed Python solution to strealime machine learning tracking metrics processing for a containerized data processing application.</li>
-          <li>Full stack development for NodeJS server web application.</li>
-          <li>Wrote unit tests to raise test coverage from 13% to 43% for a tabletop cyber situational awareness exercise application in Java.</li>
+      <div class="skills-list-container" id="tools">
+        <h3 id="tools-header" class="subsection-header">Tools</h3>
+        <ul id="tools-list">
+          <li>git</li>
+          <li>Docker</li>
+          <li>Docker Compose</li>
+          <li>Kubernetes</li>
+          <li>Django</li>
+          <li>Flask</li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <div class="section-container even-section">
+    <section id="experience">
+      <h2 id="experience-header" class="section-header">Experience</h2>
+      <div id="intern-container">
+        <h3 id="intern-header" class="subsection-header">Johns Hopkins Applied Physics Laboratory Intern</h3>
+        <address id=intern-address>
+          <p>Laurel, MD</p>
+        </address>
+        <div id="intern-2020">
+          <h4 id="intern-2020-header" class="sub-subsection-header">June 2020 - August 2020</h4>
+          <ul id="intern-2020-list">
+            <li>Developed new kubernetes deployment for data processing application in Python.</li>
+            <li>Designed and implemented end-to-end testing framework with Docker for network traffic processing application stack consisting of 15 interconnected applications.</li>
+            <li>Performed quality assurance programming to improve cognitive complexity for network traffic processing project written in C#.</li>
+          </ul>
+        </div>
+        <div id="intern-2019">
+          <h4 id="intern-2019-header" class="sub-subsection-header">May 2019 - August 2019</h4>
+          <ul id="intern-2019-list">
+            <li>Developed Python solution to strealime machine learning tracking metrics processing for a containerized data processing application.</li>
+            <li>Full stack development for NodeJS server web application.</li>
+            <li>Wrote unit tests to raise test coverage from 13% to 43% for a tabletop cyber situational awareness exercise application in Java.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

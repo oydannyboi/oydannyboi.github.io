@@ -1,0 +1,106 @@
+/* Tags */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #298ffc;
+    scroll-snap-type:y mandatory;
+    color: #0e004a;
+}
+section {
+    margin: 2% 13% 2% 13%;
+}
+div {
+    list-style: inside;
+}
+h2, h3, h4, #title {
+    font-family: Palatino, serif;
+}
+h2 {
+    font-size: 2vw;
+}
+h3 {
+    font-size: 1.25vw;
+}
+h4 {
+    font-size: 1vw;
+}
+li, p {
+    font-family: Optima, sans-serif;
+    font-size: 1vw;
+}
+
+
+/* Page Banner */
+#page-banner {
+    box-sizing: border-box;
+    width: 100vw;
+    top: 0;
+    position: sticky;
+    display: inline-flex;
+    border-bottom: solid 2px #681000;
+    background-color: #ffae00;
+}
+#title {
+    text-decoration: none;
+    font-size: 4vw;
+    margin-left: 2%;
+    margin-right: 20%;
+    width: 41%;
+    align-self: center;
+    color: #681000;
+}
+nav {
+    height: 100%;
+    width: 50%;
+    font-family: Optima, sans-serif;
+    font-size: 1.455vw;
+    display: flex;
+}
+.nav-container {
+    text-align: center;
+    border-left: solid 1px #681000;
+    padding: 3.5% 4% 3.5% 4%;
+    white-space: nowrap; 
+}
+.nav-container:hover{
+    background-color: #681000;
+    transition: 0.5s;
+    color: #298ffc;
+}
+.nav-container:hover a{
+    color: #298ffc;
+}
+.nav-link {
+    height: 100%;
+    text-decoration: none;
+    color: #681000;
+}
+
+/* Sections */
+.section-header {
+    scroll-snap-align: end none;
+    scroll-margin-top: 6vw;
+}
+.section-container {
+    padding: 0.5vw 0 0.5vw 0;
+}
+.odd-section {
+    background: #e4efff;
+}
+/* Contact */
+#email {
+    font-size: 1vw;
+}
+/* Image */
+#vt-logo {
+    width: 6vw;
+}
+/* Skills */
+.skills-list-container {
+    box-sizing: border-box;
+    padding: 1vw;
+    display: inline-table;
+    margin: -0.16vw;
+}

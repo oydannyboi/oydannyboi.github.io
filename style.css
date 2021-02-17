@@ -11,24 +11,15 @@ body {
 section {
     margin: 2% 13% 2% 13%;
 }
-div {
+ul {
     list-style: inside;
 }
 h2, h3, h4, #title {
     font-family: Palatino, serif;
 }
-h2 {
-    font-size: 2vw;
-}
-h3 {
-    font-size: 1.25vw;
-}
-h4 {
-    font-size: 1vw;
-}
 li, p {
     font-family: Optima, sans-serif;
-    font-size: 1vw;
+    font-size: 110%;
 }
 
 
@@ -82,6 +73,13 @@ nav {
 .section-header {
     scroll-snap-align: end none;
     scroll-margin-top: 6vw;
+    font-size: 210%;
+}
+.subsection-header {
+    font-size: 135%;
+}
+.sub-subsection-header {
+    font-size: 110%;
 }
 .section-container {
     padding: 0.5vw 0 0.5vw 0;
@@ -89,14 +87,17 @@ nav {
 .odd-section {
     background: #e4efff;
 }
+
 /* Contact */
 #email {
-    font-size: 1vw;
+    font-size: 100%;
 }
+
 /* Image */
 #vt-logo {
     width: 6vw;
 }
+
 /* Skills */
 .skills-list-container {
     box-sizing: border-box;
